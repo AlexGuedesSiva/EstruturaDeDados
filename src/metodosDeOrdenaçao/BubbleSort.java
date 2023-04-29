@@ -1,6 +1,6 @@
 package metodosDeOrdenaçao;
 
-public class MyBubbleSort {
+public class BubbleSort {
 
     public static void main(String[] args) {
 
