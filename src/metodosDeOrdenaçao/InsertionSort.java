@@ -17,7 +17,8 @@ public class InsertionSort
 			}
 			
 			System.out.println(" ");
-			
+
+			// Algoritmo de ordenação Insertion-sort
 			for(i = 1; i < 5; i++) {				
 				aux = array[i];
 				j = i - 1;					
