@@ -1,4 +1,4 @@
-package tiposDeMetodos;
+package metodosDeOrdenaçao;
 
 public class MyBubbleSort {
 
