@@ -1,7 +1,8 @@
 # **`Estruturas De Dados EM JAVA`**   
 
 
-   **Método Bubble-sort**
+##    **Método Bubble-sort**
+
    O Método de ordenação bolha ou Bubble-Sort é simples e um dos mais dinfudidos,
    geralmente utilizado para ordenação de uma base de dados pequena. Sua interação se limita em percorrer diversas 
    vezes o array do início ao fim, sem interrupção, trocando a posição de dois elementos sempre que estiverem 
