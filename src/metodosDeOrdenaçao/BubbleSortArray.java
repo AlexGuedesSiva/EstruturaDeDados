@@ -1,7 +1,7 @@
 package metodosDeOrdenaçao;
 import java.util.Arrays;
 
-public class BubbleSortForeachArray {
+public class BubbleSortArray {
  public static void main(String[] args) {
 		
 		int[] array = {5,3,8,2,6};
