@@ -17,10 +17,12 @@ public class Pilha {
         System.out.println("Elemento no topo --> " + livros.peek());
         System.out.println("Tamanho da pilha " + livros.size());
 
-        System.out.println(livros.peek()); // Retorna null caso vazio
+
         System.out.println(livros.element()); // Retorna uma exceção caso vazio
-        System.out.println(livros.poll());
-        System.out.println(livros.poll());
+        System.out.println(livros.pollFirst());
+        System.out.println(livros.pollFirst());
+        System.out.println(livros.peek()); // Retorna null caso vazio
+
 //		System.out.println(livros.pop());
 //		System.out.println(livros.remove());
 

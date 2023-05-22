@@ -26,9 +26,9 @@ São estruturas de dados baseadas em LIFO (Last In, First Out), onde o último e
 primeiro a ser removido. Em Java, a classe Stack implementa uma pilha.
 É possível usar a classe java.util.Stack ou a interface java.util.Deque em conjunto com a classe java.util.LinkedList para implementar uma pilha.
 
-A classe Stack é uma implementação legada de uma pilha em Java. Ela estende a classe Vector e implementa a interface List, fornecendo os métodos comumente usados para operações de pilha, como push, pop, peek e outros. No entanto, é recomendado usar a interface Deque em vez da classe Stack, já que a classe Stack é sincronizada por padrão e tem algumas desvantagens de desempenho.
+A classe **Stack** é uma implementação legada de uma pilha em Java. Ela estende a classe Vector e implementa a interface List, fornecendo os métodos comumente usados para operações de pilha, como push, pop, peek e outros. No entanto, é recomendado usar a interface Deque em vez da classe Stack, já que a classe Stack é sincronizada por padrão e tem algumas desvantagens de desempenho.
 
-A interface Deque (Double Ended Queue) é uma interface que estende a interface Queue e define uma fila duplamente terminada, permitindo operações tanto no início quanto no fim da fila. A classe LinkedList implementa a interface Deque e pode ser usada para implementar uma pilha, já que possui os métodos push, pop e peek herdados da interface Deque.
+A interface **Deque** (Double Ended Queue) é uma interface que estende a interface Queue e define uma fila duplamente terminada, permitindo operações tanto no início quanto no fim da fila. A classe LinkedList implementa a interface Deque e pode ser usada para implementar uma pilha, já que possui os métodos push, pop e peek herdados da interface Deque.
 
 **Filas:** são estruturas de dados baseadas em FIFO (First In, First Out), onde o primeiro elemento adicionado é o
 primeiro a ser removido. Em Java, a interface Queue e suas implementações, como LinkedList e PriorityQueue,
