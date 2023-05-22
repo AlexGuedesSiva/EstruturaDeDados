@@ -37,10 +37,10 @@ public class QuickSort {
         System.out.print("Array Desordenado = " + Arrays.toString(vetor));
 
         System.out.println();
-        System.out.print("Array Ordenado = { ");
+        System.out.print("Array Ordenado = ");
             quickSort(vetor, 0, vetor.length - 1);
 
 
-        System.out.print("Array ordenado = " + Arrays.toString(vetor));
-}
+        System.out.print(Arrays.toString(vetor));
+    }
 }
