@@ -67,3 +67,36 @@ por:
 * melhor caso: O(n);
 * médio caso: O(n );
 * pior caso: O(n ).
+
+##  Método Quick-Sort
+
+   O método de ordenação rápida ou Quick-Sort é mais complexo que os algoritmos anteriores. É um método de 
+   ordenação interna rápido, pois utiliza a estratégia de dividir para conquistar. Assim, a ideia é ideia é escolher um
+   elemento qualquer chamado pivô, sendo que, a partir desse pivô, o array é organizado.
+
+#### VOCÊ O CONHECE?
+   Charles Antony Richard Hoare, nascido em 1934, formou-se na universidade de
+   Oxford em 1956. É conhecido por desenvolver o método de ordenação Quick-Sort em
+   1960, ao tentar traduzir um dicionário de inglês para russo, ordenando as palavras. O
+   algoritmo de ordenação é um dos mais utilizados do mundo até hoje.
+   
+###    **_Pivô_**
+
+   Primeiramente, o algoritmo escolhe um elemento do array chamado pivô. Existem várias
+   maneiras possíveis de se escolher um pivô, podendo ser o primeiro, o último ou o elemento
+   central do array. Tal escolha depende do critério do programador ao implementar o código.
+
+###    Ordenação **_crescente_**
+      
+   Depois de escolhermos o pivô, reorganizamos o array a partir dele, de modo que os elementos
+   menores fiquem a sua esquerda e os elementos maiores fiquem a sua direita, caso a ordenação dos
+   dados seja crescente.
+
+####    Fim do processo
+   Terminando esse processo, o pivô estará em sua posição final e haverá dois subconjuntos de
+   arrays não ordenados, um à direita e outro à esquerda do pivô. Depois, de maneira recursiva, o
+   algoritmo ordena o subconjunto dos elementos menores e maiores que o pivô, até que o array seja
+   ordenado.
+
+
+
