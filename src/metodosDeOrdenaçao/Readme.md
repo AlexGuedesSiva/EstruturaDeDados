@@ -92,6 +92,29 @@ por:
    menores fiquem a sua esquerda e os elementos maiores fiquem a sua direita, caso a ordenação dos
    dados seja crescente.
 
+###    pseudocodigo Quick-Sort
+ 
+        while (esq <= dir) {
+            while (array[esq] < pivo) {
+                esq = esq + 1;
+            }
+            while (array[dir] > pivo) {
+                dir = dir - 1;
+            }
+            if (esq <= dir) {
+                aux = array[esq];
+                array[esq] = array[dir];
+                array[dir] = aux;
+                esq = esq + 1;
+                dir = dir - 1;
+            }
+        }
+        if (dir > esquerda)
+            quickSort(array, esquerda, dir);
+        if (esq < direita)
+            quickSort(array, esq, direita);
+    }
+
 ####    Fim do processo
    Terminando esse processo, o pivô estará em sua posição final e haverá dois subconjuntos de
    arrays não ordenados, um à direita e outro à esquerda do pivô. Depois, de maneira recursiva, o
