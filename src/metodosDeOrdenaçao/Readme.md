@@ -67,3 +67,94 @@ por:
 * melhor caso: O(n);
 * médio caso: O(n );
 * pior caso: O(n ).
+
+##  Método Quick-Sort
+
+   O método de ordenação rápida ou Quick-Sort é mais complexo que os algoritmos anteriores. É um método de 
+   ordenação interna rápido, pois utiliza a estratégia de dividir para conquistar. Assim, a ideia é ideia é escolher um
+   elemento qualquer chamado pivô, sendo que, a partir desse pivô, o array é organizado.
+
+#### VOCÊ O CONHECE?
+   Charles Antony Richard Hoare, nascido em 1934, formou-se na universidade de
+   Oxford em 1956. É conhecido por desenvolver o método de ordenação Quick-Sort em
+   1960, ao tentar traduzir um dicionário de inglês para russo, ordenando as palavras. O
+   algoritmo de ordenação é um dos mais utilizados do mundo até hoje.
+   
+###    **_Pivô_**
+
+   Primeiramente, o algoritmo escolhe um elemento do array chamado pivô. Existem várias
+   maneiras possíveis de se escolher um pivô, podendo ser o primeiro, o último ou o elemento
+   central do array. Tal escolha depende do critério do programador ao implementar o código.
+
+###    Ordenação **_crescente_**
+      
+   Depois de escolhermos o pivô, reorganizamos o array a partir dele, de modo que os elementos
+   menores fiquem a sua esquerda e os elementos maiores fiquem a sua direita, caso a ordenação dos
+   dados seja crescente.
+
+####    Fim do processo
+Terminando esse processo, o pivô estará em sua posição final e haverá dois subconjuntos de
+arrays não ordenados, um à direita e outro à esquerda do pivô. Depois, de maneira recursiva, o
+algoritmo ordena o subconjunto dos elementos menores e maiores que o pivô, até que o array seja
+ordenado.
+
+###    pseudocodigo Quick-Sort
+ 
+        while (esq <= dir) {
+            while (array[esq] < pivo) {
+                esq = esq + 1;
+            }
+            while (array[dir] > pivo) {
+                dir = dir - 1;
+            }
+            if (esq <= dir) {
+                aux = array[esq];
+                array[esq] = array[dir];
+                array[dir] = aux;
+                esq = esq + 1;
+                dir = dir - 1;
+            }
+        }
+        if (dir > esquerda)
+            quickSort(array, esquerda, dir);
+        if (esq < direita)
+            quickSort(array, esq, direita);
+    }
+
+   Quanto as vantagens do Quick-Sort, este trabalha com eficiência com uma base de dados grande e divide o
+   array em pequenos arrays a partir de um elemento pivô. Porém, uma desvantagem é o fato de a
+   implementação ser mais difícil, de não ser um algoritmo estável, a decisão de escolha do pivô e que nem
+   sempre o particionamento é balanceado.
+   Considerando um array com n elementos, a complexidade do algoritmo de ordenação Quick-Sort é dada por:
+   * melhor caso: O(n log n);
+   * médio caso: O(n log n);
+   * pior caso: O(n²).
+
+   Agora que entendemos sobre o método, no tópico a seguir conheceremos mais um: o Merge-Sort. Veremos sua
+   complexidade e características. Acompanhe!
+
+
+##  Método Merge-Sort
+
+   O método de ordenação intercalada ou Merge-Sort é complexo e, como o algoritmo anterior, faz uso da
+   estratégia de dividir para conquistar. Assim, a ideia é dividir o conjunto de dados em subconjuntos,
+   resolvendo cada subconjunto e, depois, juntando os resultados.
+   O algoritmo opera na estratégia de dividir os dados de entrada do array em dois subconjuntos com partes
+   iguais para, em seguida, realizar o mesmo procedimento nos subconjuntos até ficar dois ou um elemento.
+   Depois, o algoritmo une as partes ordenadas e os dois elementos de cada parte são separados. O menor deles
+   é selecionado e retirado de sua parte. Assim, os menores entre os restantes são comparados e se prossegue
+   dessa forma até serem unidas todas as partes. Observe a figura a seguir.
+
+   Temos, nesse caso, que o algoritmo é estável, em que não altera a ordem de dados iguais e é indicado
+   para aplicações que possuem restrição de tempo. Porém, uma grande desvantagem é possuir um gasto extra
+   de espaço de memória.
+   Considerando um array com n elementos, a complexidade do algoritmo de ordenação Merge-Sort é:
+   * Melhor Caso: O (n log n)
+   * Médio Caso: O (n log n)
+   * Pior Caso: O (n log n)
+
+
+   **Sendo assim, pudemos aprender sobre alguns dos algoritmos mais utilizados, a complexidade de cada um e
+   suas vantagens e desvantagens. Descobrimos, inclusive, que existem algoritmos que são mais utilizados para
+   aumentar a eficiência, principalmente no fator tempo, como o Quick-Sort e o Merge-Sort, que são mais
+   complexos.**
