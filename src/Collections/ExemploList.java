@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.*;
+
 class ExemploList {
     public static void main(String[] args) {
 // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
@@ -52,13 +53,13 @@ class ExemploList {
 
         Iterator<Double> iterator = notas.iterator();
         Double soma = 0d;
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             Double next = iterator.next();
             soma += next;
         }
         System.out.println("Exiba a soma dos valores: " + soma);
 
-        System.out.println("Exiba a média das notas: " + (soma/notas.size()));
+        System.out.println("Exiba a média das notas: " + (soma / notas.size()));
 
         System.out.println("Remova a nota 0: ");
         notas.remove(0d);
@@ -70,9 +71,9 @@ class ExemploList {
 
         System.out.println("Remova as notas menores que 7 e exiba a lista: ");
         Iterator<Double> iterator1 = notas.iterator();
-        while(iterator1.hasNext()) {
+        while (iterator1.hasNext()) {
             Double next = iterator1.next();
-            if(next < 7) iterator1.remove();
+            if (next < 7) iterator1.remove();
         }
         System.out.println(notas);
 

@@ -13,7 +13,7 @@ public class MergeSort {
         // Copia os dados para os arrays temporario
         for (int i = 0; i < n1; ++i)
             L[i] = array[l + i];
-        for(int j=0; j<n2; ++j)
+        for (int j = 0; j < n2; ++j)
             R[j] = array[m + 1 + j];
 
         // Mescla ou intercala os dados para arrays temporarios
@@ -22,12 +22,11 @@ public class MergeSort {
 
         //índice inicial do array mesclado
         int k = l;
-        while (i < n1 && j < n2){
+        while (i < n1 && j < n2) {
             if (L[i] <= R[j]) {
                 array[k] = L[i];
                 i++;
-            }
-            else {
+            } else {
                 array[k] = R[j];
                 j++;
             }
@@ -52,17 +51,17 @@ public class MergeSort {
     // Ordena o array{l...r] usando o merge ()
     public static void sort(int array[], int l, int r) {
         if (l < r) {
-            int m = (l+r)/2; // encontra o meio
+            int m = (l + r) / 2; // encontra o meio
             // Sorteia a primeira e a segunda metade
             sort(array, l, m);
-            sort(array, m+1, r);
+            sort(array, m + 1, r);
             merge(array, l, m, r); // mescla as metades selecionadas
         }
     }
 
     public static void imprimirArray(int array[]) {
-        for (int i=0; i< array.length; ++i) {
-            if (i == array.length -1){
+        for (int i = 0; i < array.length; ++i) {
+            if (i == array.length - 1) {
                 System.out.print(array[i] + " }");
             } else {
                 System.out.print(array[i] + ",");

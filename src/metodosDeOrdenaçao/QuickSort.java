@@ -38,7 +38,7 @@ public class QuickSort {
 
         System.out.println();
         System.out.print("Array Ordenado = ");
-            quickSort(vetor, 0, vetor.length - 1);
+        quickSort(vetor, 0, vetor.length - 1);
 
 
         System.out.print(Arrays.toString(vetor));
