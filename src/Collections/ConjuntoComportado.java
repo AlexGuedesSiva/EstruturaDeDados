@@ -4,6 +4,7 @@ import com.sun.source.tree.Tree;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 
@@ -22,6 +23,7 @@ import java.util.TreeSet;
 public class ConjuntoComportado {
     public static void main(String[] args) {
 
+        // Dados Homogenize
         Set<String> listaAprovados1 = new TreeSet<>();
         Set<String> listaAprovados2 = new HashSet<>();
 
@@ -43,6 +45,19 @@ public class ConjuntoComportado {
         for (String candidato2 : listaAprovados2) {
             System.out.println(candidato2);
         }
+
+        System.out.println();
+        System.out.println("Conjunto de numeros ordenados com SortedSet");
+        SortedSet<Integer> nums = new TreeSet<>();
+        nums.add(120);
+        nums.add(2);
+        nums.add(1);
+        nums.add(30);
+
+        for (int n : nums) {
+            System.out.println(n);
+        }
+
     }
 }
 
