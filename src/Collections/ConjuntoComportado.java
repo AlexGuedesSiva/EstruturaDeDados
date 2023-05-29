@@ -6,6 +6,19 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+
+/* TreeSet:
+
+   O TreeSet é uma implementação da interface Set que mantém os elementos em ordem crescente ou decrescente.
+   Internamente, ele utiliza uma árvore balanceada (geralmente uma árvore rubro-negra) para armazenar os elementos.
+   Ao contrário do HashSet, o TreeSet não permite elementos duplicados. As operações básicas de adição, remoção e
+   verificação de existência de um elemento têm um tempo de execução médio de O(log n), onde n é o número de elementos
+   no conjunto.
+   Além disso, o TreeSet fornece métodos adicionais para acessar o primeiro e
+   o último elemento, bem como para obter subconjuntos de elementos com base em
+   um intervalo.
+*/
+
 public class ConjuntoComportado {
     public static void main(String[] args) {
 
@@ -32,3 +45,13 @@ public class ConjuntoComportado {
         }
     }
 }
+
+
+/*
+    Resumindo, a diferença principal entre HashSet e TreeSet é que o HashSet armazena os elementos de forma não
+    ordenada, enquanto o TreeSet os mantém em uma ordem específica definida pela comparação dos elementos. A escolha
+    entre eles depende das necessidades específicas do seu programa: se a ordem dos elementos não importa e você só
+    precisa verificar a existência de elementos de forma eficiente, o HashSet é uma escolha adequada. No entanto, se
+    você precisa dos elementos em uma ordem específica ou deseja realizar operações como obter o menor ou o maior
+    elemento, o TreeSet é mais apropriado.
+ */

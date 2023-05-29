@@ -3,6 +3,14 @@ package Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+HashSet:
+    O HashSet é uma implementação da interface Set na estrutura de dados hash table. Ele armazena elementos de forma
+    não ordenada e não permite elementos duplicados. O tempo de execução das operações básicas, como adicionar, remover
+    e verificar a existência de um elemento, é constante, desde que não haja colisões de hash. No entanto, a ordem dos
+    elementos não é garantida, pois depende da função de hash dos elementos.
+ */
+
 public class ConjuntoBaguncado {
 
     public static void main(String[] args) {
