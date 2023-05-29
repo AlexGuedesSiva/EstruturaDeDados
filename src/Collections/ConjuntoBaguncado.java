@@ -9,6 +9,7 @@ public class ConjuntoBaguncado {
 
         HashSet conjunto = new HashSet();
 
+
         conjunto.add(1.2);
         conjunto.add(true);
         conjunto.add("Teste");
