@@ -36,7 +36,7 @@ public class Pilha {
     public static void main(String[] args) {
 
         // EXEMPLO 1
-        System.out.println("EXEMPLO 1");
+        System.out.println("EXEMPLO 1 \n");
         Deque<String> deque = new ArrayDeque<>();
 
         deque.addFirst("Elemento 1");
@@ -53,22 +53,32 @@ public class Pilha {
 
         System.out.println();
         // EXEMPLO 2
-        System.out.println("EXEMPLO 2");
+        System.out.println("EXEMPLO 2 \n");
         Deque<String> livros = new ArrayDeque<String>();
 
         livros.add("O Pequeno Principe");
         livros.push("Don Quixote");
         livros.push("O Hobbit");
 
-        System.out.println(livros.peek());// Retorna o elemento da frente da fila sem removê-lo
-        System.out.println(livros.element());// Retorna o elemento da frente da fila sem removê-lo.
+        System.out.println("Livros da pilha usando Foreach: ");
+        for (String li : livros) {
+            System.out.println(li);
+        }
 
-        System.out.println(livros.pop());// remove e retorna o primeiro elemento deste deque.Este método é equivalente a removeFirst().
-        System.out.println(livros.poll()); // Remove o elemento da frente da fila e o retorna.
+        System.out.println();
+
+        System.out.println("Exibindo o elemento da frente da pilha: ");
+        System.out.println(livros.peek());// Retorna o elemento no topo da pilha sem removê-lo
+        System.out.println(livros.element());// Retorna o elemento no topo da pilha sem removê-lo.
+
+        System.out.println("Exibindo e removendo o elemento no top da pilha: ");
+        System.out.println(livros.pop());// remove e retorna o elemento no topo da pilha. Este método é equivalente a removeFirst().
+        System.out.println(livros.poll()); // Remove o elemento no topo da pilha e o retorna.
         System.out.println(livros.poll());
-        System.out.println(livros.poll());
-        System.out.println(livros.poll());
+        System.out.println(livros.poll()); // Retorna null
     //  System.out.println(livros.remove()); // Lança uma Exceção.
+
+
 
     }
 }
