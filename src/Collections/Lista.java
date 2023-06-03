@@ -18,25 +18,25 @@ ArrayList:
 public class Lista {
     public static void main(String[] args) {
 
-        ArrayList<Usuario> lista = new ArrayList<>();
+        ArrayList<UsuarioHash> lista = new ArrayList<>();
 
-        Usuario u1 = new Usuario("Ana");
+        UsuarioHash u1 = new UsuarioHash("Ana");
 
         lista.add(u1);
-        lista.add(new Usuario("Carlos"));
-        lista.add(new Usuario("Lia"));
-        lista.add(new Usuario("Bia"));
-        lista.add(new Usuario("Manu"));
+        lista.add(new UsuarioHash("Carlos"));
+        lista.add(new UsuarioHash("Lia"));
+        lista.add(new UsuarioHash("Bia"));
+        lista.add(new UsuarioHash("Manu"));
 
         System.out.println(lista.get(3));// Consegue acessar pelo indice
 
         System.out.println("Remove o usuario " + lista.remove(1));
-        System.out.println(lista.remove(new Usuario("Manu")));
+        System.out.println(lista.remove(new UsuarioHash("Manu")));
 
 
-        System.out.println("Tem ?? " + lista.contains(new Usuario("Lia")));
+        System.out.println("Tem ?? " + lista.contains(new UsuarioHash("Lia")));
 
-        for (Usuario u : lista) {
+        for (UsuarioHash u : lista) {
             System.out.println(u.nome);
         }
 
@@ -64,7 +64,7 @@ class Usuario {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Usuario usuario = (Usuario) o;
+        UsuarioHash usuario = (UsuarioHash) o;
         return Objects.equals(nome, usuario.nome);
     }
 
